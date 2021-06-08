@@ -15,7 +15,7 @@ module.exports = {
  /* segundo_apellido: {type: 'string', required: true},
     DNI: {type: 'number', required: true},
     telefono: {type: 'number', required: true}, */
-    email: {type: 'string', required: true},
+    email: {type: 'string', required: true, unique: true},
     password: {type: 'string', required: true},
  /*  calle: {type: 'string', required: true},
     Nro: {type: 'number', required: true},
