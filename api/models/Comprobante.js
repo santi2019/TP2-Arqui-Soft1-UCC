@@ -11,6 +11,13 @@ module.exports = {
 
     metodoPago: {type: 'string', isIn: ['Debito/Credito', 'Efectivo'], required: true},
 
+
+    ownerC:{
+      model:'reservacion',
+      unique: true
+    }
+
+
   },
 
 };

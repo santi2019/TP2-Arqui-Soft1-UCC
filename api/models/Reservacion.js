@@ -15,6 +15,24 @@ module.exports = {
     tipoHabitacion: {type: 'string', isIn: ['Single', 'Double', 'Triple', 'Cuadruple'], required: true},
     metodoPago: {type: 'string', isIn: ['Debito/Credito', 'Efectivo'], required: true},
 
+
+    //Referencia a huesped
+    owner: {
+      model: 'huesped'
+    },
+
+    //Referencia a habitacion
+    habitaciones: {
+      collection:'habitacion',
+      via: 'ownerHab'
+    },
+
+    //Referencia a comprobante
+    comprobantes: {
+      collection:'comprobante',
+      via: 'ownerC'
+    }
+
   },
 
 };

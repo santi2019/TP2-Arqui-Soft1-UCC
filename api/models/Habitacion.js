@@ -15,6 +15,11 @@ module.exports = {
     caracteristica: {type: 'string',  required: true},
     tipoHabitacion: {type: 'string', isIn: ['Single', 'Double', 'Triple', 'Cuadruple'], required: true},
 
+    ownerHab:{
+      model:'reservacion',
+      unique: true
+    }
+
   },
 
 };

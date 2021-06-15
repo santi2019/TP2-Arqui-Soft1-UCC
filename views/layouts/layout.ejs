@@ -24,10 +24,9 @@
         <li><a href="/about">About</a></li>
         <li>
           <%if(req.session.user) {%>
-            <h2><%= req.session.user%></h2>
-            <a class="current" href="/logout">logout</a>
+            <a  href="/logout">logout</a>
           <% }else{%>
-            <a class="current" href="/login">login</a>
+            <a  href="/login">login</a>
           <% }%>
         </li>
       </ul>

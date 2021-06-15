@@ -246,7 +246,7 @@ p{
 /*Places*/
 #places{
     height: 1127px;
-    background: url('../Assets/img/Techo.jpg') no-repeat
+    background: url('../images/Techo.jpg') no-repeat
     center center/cover;
     padding-top: 109px;
 }

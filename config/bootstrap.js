@@ -11,19 +11,19 @@
 
 module.exports.bootstrap = async function() {
 
-  sails.argon2 = require("argon2");
+  sails.argon2 = require('argon2');
    if (await User.count() > 0) {
-     console.log("No Vacia");
+     console.log('No Vacia');
      return;
    }
 
-  console.log("Vacia");
+  console.log('Vacia');
    await User.createEach([
-     { email: "santiagovietto5@hotmail.com",
-       password: await sails.argon2.hash("manzana123")},
+     { email: 'santiagovietto5@hotmail.com',
+       password: await sails.argon2.hash('manzana123')},
 
-     { email: "lucas10Herrera@hotmail.com",
-       password: await sails.argon2.hash("manzana111")},
+     { email: 'lucas10Herrera@hotmail.com',
+       password: await sails.argon2.hash('manzana111')},
   ]);
 
 };

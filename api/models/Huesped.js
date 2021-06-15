@@ -20,8 +20,15 @@ module.exports = {
     barrio: {type: 'string', required: true},
     ciudad: {type: 'string', required: true},
 
-  },
 
+
+    reservaciones: {
+      collection: 'reservacion',
+      via: 'owner'
+    }
+
+
+  },
 };
 
 /*unsubscribeReason: {
