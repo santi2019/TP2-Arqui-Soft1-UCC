@@ -18,19 +18,19 @@ module.exports = {
 
     //Referencia a huesped
     owner: {
-      model: 'huesped'
+      model: 'Huesped'
     },
 
     //Referencia a habitacion
-    habitaciones: {
-      collection:'habitacion',
-      via: 'ownerHab'
+    habitacion: {
+      collection:'Habitacion',
+      via: 'reserva'
     },
 
     //Referencia a comprobante
-    comprobantes: {
-      collection:'comprobante',
-      via: 'ownerC'
+    comprobante: {
+      collection:'Comprobante',
+      via: 'reserva'
     }
 
   },

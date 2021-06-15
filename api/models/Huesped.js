@@ -23,10 +23,9 @@ module.exports = {
 
 
     reservaciones: {
-      collection: 'reservacion',
+      collection: 'Reservacion',
       via: 'owner'
     }
-
 
   },
 };
