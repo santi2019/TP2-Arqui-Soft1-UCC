@@ -23,8 +23,9 @@ module.exports.routes = {
 
   '/': { view: 'pages/homepage' },
   'GET /login': { view: 'pages/login' },
-  'POST /login': 'HuespedController.login',
-  '/logout': 'HuespedController.logout',
+  'POST /login': 'UserController.login',
+  '/logout': 'UserController.logout',
+  'GET /about': { view: 'pages/about' }
 
 
 

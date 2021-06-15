@@ -1,15 +1,39 @@
-<form action="/login" method="post">
-  <div class="mb-3">
-    <label for="Email" class="form-label">Email</label>
-    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" name="Email">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+<section id="login-form" class="py-3">
+  <div class="container">
+    <h1 class="l-heading"><span class="text-primary">Log</span>in</h1>
+    <p>Para realizar una reserva debe registrarse a continuacion:</p>
+    <form action="/login" method="post">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" name="Email" id="Email">
+        <label for="password">Password</label>
+        <input type="password" name="Password" id="Password">
+      </div>
+      <button type="submit" class="btn">Sumbit</button>
+    </form>
+    <p>No te preocupes !, tu contraseña esta asegurada :)</p>
   </div>
-  <div class="mb-3">
-    <label for="Password" class="form-label">Password</label>
-    <input type="password" class="form-control" id="Password" name="Password">
+</section>
+
+<section id="contact-info" class="bg-dark">
+  <div class="container">
+    <div class="box">
+      <i class="fas fa-map-marker-alt fa-3x"></i>
+      <h3>Ubicación</h3>
+      <p>Buenos Aires 253 - Capital, </p>
+      <p>La Rioja - Argentina</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-phone fa-3x"></i>
+      <h3>Telefono</h3>
+      <p>Cel. (54) 3804416133</p>
+      <p>Fijo. 4427474</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-envelope fa-3x"></i>
+      <h3>Email</h3>
+      <p>libertadorhotel@hotmail.com</p>
+    </div>
   </div>
-  <button type="submit" class="btn btn-primary">Login</button>
-</form>
-
-
+</section>
 

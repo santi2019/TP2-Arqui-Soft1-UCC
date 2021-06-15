@@ -9,29 +9,23 @@ module.exports = {
 
   attributes: {
 
-    primer_nombre: {type: 'string', required: true},
- // segundo_nombre: {type: 'string', required: false},
-    primer_apellido: {type: 'string', required: true},
- /* segundo_apellido: {type: 'string', required: true},
+    nombreCompleto: {type: 'string', required: true},
+    apellidoCompleto: {type: 'string', required: true},
     DNI: {type: 'number', required: true},
-    telefono: {type: 'number', required: true}, */
+    telefono: {type: 'number', required: true},
     email: {type: 'string', required: true},
     password: {type: 'string', required: true},
-    /*  calle: {type: 'string', required: true},
-    Nro: {type: 'number', required: true},
+    calle: {type: 'string', required: true},
+    nro: {type: 'number', required: true},
     barrio: {type: 'string', required: true},
     ciudad: {type: 'string', required: true},
-*/
+
   },
-
-
-  /*unsubscribeReason: {
-  type: 'string',
-  isIn: ['boring', 'too many emails', 'recipes too difficult', 'other'],
-  required: true
-}*/
-
-
 
 };
 
+/*unsubscribeReason: {
+type: 'string',
+isIn: ['boring', 'too many emails', 'recipes too difficult', 'other'],
+required: true
+}*/
