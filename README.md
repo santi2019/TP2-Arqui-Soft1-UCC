@@ -1,6 +1,10 @@
-# 2021-tp-2
+# Libertador Hotel Web
 
 a [Sails v1](https://sailsjs.com) application
+
+### Integrantes
++ Vietto Santiago
++ Casermeiro Silvia
 
 
 ### Links

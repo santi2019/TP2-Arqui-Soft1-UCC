@@ -24,6 +24,7 @@
         <li><a href="/about">About</a></li>
         <li>
           <%if(req.session.user) {%>
+            <%= req.session.user.email %>
             <a  href="/logout">logout</a>
           <% }else{%>
             <a  href="/login">login</a>
