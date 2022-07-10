@@ -1,0 +1,74 @@
+<section id="listareserva"  class="py-3">
+    <div class="container">
+        <h1 class="l-heading"><span class="text-primary">Reser</span>vas</h1>
+        <% for (let i of allreservas){ %>
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    <ul class="list-group1">
+                        <h5 class="card-title">Datos de la reserva</h5>
+                        <li class="list-group-item">Fecha de llegada:
+                            <%= i.fechaIngreso %>
+                        </li>
+                        <li class="list-group-item">Fecha de salida:
+                            <%= i.fechaSalida %>
+                        </li>
+                        <li class="list-group-item">Cantidad de pasajeros:
+                            <%= i.cantidadPasajeros %>
+                        </li>
+                        <li class="list-group-item">Cantidad de habitaciones:
+                            <%= i.cantidadHabitaciones %>
+                        </li>
+                        <li class="list-group-item">Metodo de pago:
+                            <%= i.metodoPago %>
+                        </li>
+                        <h5 class="card-title">Huesped</h5>
+                        <li class="list-group-item">Nombre:
+                            <%= i.owner.nombre %>
+                        </li>
+                        <li class="list-group-item">Apellido:
+                            <%= i.owner.apellido %>
+                        </li>
+                        <li class="list-group-item">DNI:
+                            <%= i.owner.dni %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="buttom3" href="/cancelar">
+                <button type="submit" class="btn">Cancelar</button>
+            </a>
+            <% } %>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section id="contact-info" class="bg-dark">
+    <div class="container">
+        <div class="box">
+            <i class="fas fa-map-marker-alt fa-3x"></i>
+            <h3>Ubicación</h3>
+            <p>Buenos Aires 253 - Capital, </p>
+            <p>La Rioja - Argentina</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-phone fa-3x"></i>
+            <h3>Telefono</h3>
+            <p>Cel. (54) 3804416133</p>
+            <p>Fijo. 4427474</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-envelope fa-3x"></i>
+            <h3>Email</h3>
+            <p>libertadorhotel@hotmail.com</p>
+        </div>
+    </div>
+</section>

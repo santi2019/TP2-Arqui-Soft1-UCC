@@ -22,10 +22,30 @@ module.exports.routes = {
 
 
   '/': { view: 'pages/homepage' },
+
+  //USUARIO:
   'GET /login': { view: 'pages/login' },
   'POST /login': 'UserController.login' ,
+  '/perfil': 'UserController.perfilDatos',
   '/logout': 'UserController.logout',
+  'GET /signup': {view: 'pages/signup'},
+  'POST /signup': 'UserController.signup',
+
+  //ABOUT US:
   'GET /about': { view: 'pages/about' },
+
+  //HUESPED:
+  'GET /reserva': 'huespedController.huespedView', //{ view: 'pages/reserva' },
+  'POST /huesped': 'huespedController.newHuesped',
+
+  //RESERVA (ESTADIA) + COMPROBANTE:
+  'GET /reservaConfirm': 'ReservacionController.reservaView', //{ view: 'pages/reservaConfirm' },
+  'POST /estadia': 'ReservacionController.newReserva' ,
+  '/reservasList': 'ReservacionController.allReservas' ,
+  '/cancelar': 'ReservacionController.cancelarReserva',
+  '/ComprobanteReserva': 'ComprobanteController.comprobanteReserva',
+
+
 
 
 

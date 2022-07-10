@@ -2,7 +2,7 @@
   <html lang="en">
 
   <head>
-    <title>Libertador Hotel website</title>
+    <title>Libertador Hotel Website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="widt=device-width, initial-sacale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,11 +23,12 @@
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li>
-          <%if(req.session.user) {%>
-            <%= req.session.user.email %>
-            <a  href="/logout">logout</a>
+          <%if(req.session.existedUser) {%>
+          <li><a href="/reserva">Reservar</a></li>
+          <li><a href="/perfil"><%= req.session.existedUser.username %></a></li>
           <% }else{%>
-            <a  href="/login">login</a>
+            <a  href="/login">Login</a>
+            <li><a href="/signup">Signup</a></li>
           <% }%>
         </li>
       </ul>
@@ -40,7 +41,7 @@
 </div>
 
   <footer id="main-footer">
-    <p>Hotel Libertador ©2021, All Rights Reserved </p>
+    <p>Hotel Libertador ©2021, All Rights Reserved</p>
   </footer>
 
   </body>

@@ -1,0 +1,58 @@
+<section id="comprobante"  class="py-3">
+    <div class="container">
+        <h1 class="l-heading"><span class="text-primary">Usua</span>rio</h1>
+        <% if(usr){ %>
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    <ul class="list-group1">
+                        <h5 class="card-title">Datos de la cuenta</h5>
+                        <li class="list-group-item">Usuario:
+                            <%= usr.username %>
+                        </li>
+                        <li class="list-group-item">Email:
+                            <%= usr.email %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <% } %>
+        <a class="buttom1" href="/logout">
+            <button type="submit" class="btn">Logout</button>
+        </a>
+        <a class="buttom2" href="/reservasList">
+            <button type="submit" class="btn">Ver reservas</button>
+        </a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section id="contact-info" class="bg-dark">
+    <div class="container">
+        <div class="box">
+            <i class="fas fa-map-marker-alt fa-3x"></i>
+            <h3>Ubicación</h3>
+            <p>Buenos Aires 253 - Capital, </p>
+            <p>La Rioja - Argentina</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-phone fa-3x"></i>
+            <h3>Telefono</h3>
+            <p>Cel. (54) 3804416133</p>
+            <p>Fijo. 4427474</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-envelope fa-3x"></i>
+            <h3>Email</h3>
+            <p>libertadorhotel@hotmail.com</p>
+        </div>
+    </div>
+</section>

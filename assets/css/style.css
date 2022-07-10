@@ -1,11 +1,9 @@
-
 /*RESET*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 
 
@@ -34,9 +32,9 @@ p{
 
 /*Utility classes*/
 .container{
-    margin: auto;
-    max-width: 1550px;
-    overflow: auto;
+  margin: auto;
+  max-width: 1550px;
+  overflow: auto;
   overflow: hidden;
   height: 100%;
 }
@@ -225,7 +223,6 @@ p{
   padding-top: 100px;
 }
 
-
 #about-info .info-right{
     float: right;
     width: 50%;
@@ -268,7 +265,7 @@ p{
     margin-bottom: 40px;
     border-radius: 5px;
     text-align: left;
-  height: 160px;
+    height: 160px;
 
   /* opacity: 0.9;*/
 }
@@ -296,6 +293,7 @@ p{
 
 #login-form label{
     display: block;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -311,10 +309,150 @@ p{
 }
 
 #login-form{
-  width: 400px;
+  width: 450px;
   margin: 40px auto 70px auto;
 }
 
+
+
+
+
+/*Huesped y estadia form*/
+#huesped-form .form-group{
+  margin-bottom: 40px;
+}
+
+#huesped-form label{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#huesped-form .deb{
+  font-size: 13px;
+}
+
+#huesped-form input .ceb{
+  margin-right: auto;
+}
+
+#huesped-form input{
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#huesped-form input:focus{
+  outline: none;
+  border-color: #f7c08a;
+}
+
+#huesped-form{
+  width: 450px;
+  margin: 40px auto 70px auto;
+}
+
+
+
+
+/*Comprobante*/
+#comprobante .card-header{
+  margin-bottom: 10px;
+}
+
+#comprobante .list-group1{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#comprobante .list-group2{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#comprobante .deb{
+  font-size: 13px;
+}
+
+#comprobante li .ceb{
+  margin-right: auto;
+}
+
+#comprobante li{
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#comprobante{
+  width: 450px;
+  margin: 40px auto 70px auto;
+}
+
+#comprobante .card-title{
+  text-align: center;
+  background: #444;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px;
+}
+
+#comprobante .buttom1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#comprobante .buttom2{
+  margin-top: 10px;
+}
+
+
+#comprobante .buttom3{
+  display: block;
+}
+
+
+
+
+#listareserva .card-header{
+  margin-bottom: 10px;
+}
+
+#listareserva{
+  width: 450px;
+  margin: 40px auto 70px auto;
+  padding: 70px;
+}
+#listareserva .deb{
+  font-size: 13px;
+}
+
+#listareserva li .ceb{
+  margin-right: auto;
+}
+
+#listareserva li{
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#listareserva .card-title{
+  text-align: center;
+  background: #444;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px;
+}
+
+#listareserva .buttom3{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
 
 

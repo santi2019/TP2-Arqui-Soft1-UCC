@@ -8,17 +8,13 @@
 module.exports = {
 
   attributes: {
+    fecha: {type: 'string', required: true},
 
-    metodoPago: {type: 'string', isIn: ['Debito/Credito', 'Efectivo'], required: true},
 
-
-    reserva:{
-      model:'Reservacion',
-      unique: true
+    reserva: {   //Asocicacion de una sola via
+      model: 'Reservacion'
     }
-
 
   },
 
 };
-

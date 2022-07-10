@@ -1,17 +1,18 @@
 <section id="login-form" class="py-3">
   <div class="container">
-    <h1 class="l-heading"><span class="text-primary">Log</span>in</h1>
-    <p>Para realizar una reserva debe iniciar sesion a continuacion:</p>
-    <form action="/login" method="post">
+    <h1 class="l-heading"><span class="text-primary">Sign</span>up</h1>
+    <p>Para realizar una reserva debe registrarse a continuacion:</p>
+    <form action="/signup" method="post">
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="text" name="Email" id="Email">
-        <label for="password">Password</label>
-        <input type="password" name="Password" id="Password">
+          <label for="nombre">Nombre de usuario</label>
+          <input type="text" name="name" id="name">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="Email">
+          <label for="password">Password</label>
+          <input type="password" name="Pass" id="Password">
       </div>
-      <button type="submit" class="btn">Ingresar</button>
+      <button type="submit" class="btn">Registrarse</button>
     </form>
-    <p>No te preocupes !, tu contraseña esta asegurada :)</p>
   </div>
 </section>
 

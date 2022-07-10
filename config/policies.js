@@ -17,6 +17,28 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
+  UserController:{
+    perfilDatos: 'isLoggedIn',
+    logout: 'isLoggedIn',
+  },
+
+  HuespedController:{
+    huespedView: 'isLoggedIn',
+    newHuesped: 'isLoggedIn',
+  },
+
+  ReservacionController:{
+    reservaView: 'isLoggedIn',
+    newReserva: 'isLoggedIn',
+    allReservas: 'isLoggedIn',
+    cancelarReserva: 'isLoggedIn',
+  },
+
+  ComprobanteController:{
+    comprobanteReserva: 'isLoggedIn',
+  },
+
+
   // '*': true,
 
 };

@@ -1,0 +1,83 @@
+<section id="comprobante" class="py-3">
+    <div class="container">
+        <h1 class="l-heading"><span class="text-primary">Compro</span>bante</h1>
+        <p>Verifique la informacion antes de finalizar:</p>
+        <% if(result){ %>
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                <ul class="list-group1">
+                    <h5 class="card-title">Datos de la reserva</h5>
+                    <li class="list-group-item">Fecha de realizacion:
+                        <%= result.fecha %>
+                    </li>
+                    <li class="list-group-item">Fecha de llegada:
+                        <%= result.reserva.fechaIngreso %>
+                    </li>
+                    <li class="list-group-item">Fecha de salida:
+                        <%= result.reserva.fechaSalida %>
+                    </li>
+                    <li class="list-group-item">Cantidad de pasajeros:
+                        <%= result.reserva.cantidadPasajeros %>
+                    </li>
+                    <li class="list-group-item">Cantidad de habitaciones:
+                        <%= result.reserva.cantidadHabitaciones %>
+                    </li>
+                    <li class="list-group-item">Metodo de pago:
+                        <%= result.reserva.metodoPago %>
+                    </li>
+                </ul>
+                <ul class="list-group2">
+                    <h5 class="card-title">Datos del huesped</h5>
+                    <li class="list-group-item">Nombre:
+                        <%= result.reserva.owner.nombre %>
+                    </li>
+                    <li class="list-group-item">Apellido:
+                        <%= result.reserva.owner.apellido %>
+                    </li>
+                    <li class="list-group-item">Fecha de nacimiento:
+                        <%= result.reserva.owner.fechaNacimiento %>
+                    </li>
+                    <li class="list-group-item">DNI:
+                        <%= result.reserva.owner.dni %>
+                    </li>
+                    <li class="list-group-item">Telefono:
+                        <%= result.reserva.owner.telefono %>
+                    </li>
+                    <li class="list-group-item">Domicilio:
+                        <%= result.reserva.owner.domicilio %>
+                    </li>
+                    <li class="list-group-item">Nacionalidad:
+                        <%= result.reserva.owner.nacionalidad %>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        <% } %>
+        <a href="/">
+        <button type="submit" class="btn">Finalizar</button>
+        </a>
+    </div>
+</section>
+
+
+<section id="contact-info" class="bg-dark">
+    <div class="container">
+        <div class="box">
+            <i class="fas fa-map-marker-alt fa-3x"></i>
+            <h3>Ubicación</h3>
+            <p>Buenos Aires 253 - Capital, </p>
+            <p>La Rioja - Argentina</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-phone fa-3x"></i>
+            <h3>Telefono</h3>
+            <p>Cel. (54) 3804416133</p>
+            <p>Fijo. 4427474</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-envelope fa-3x"></i>
+            <h3>Email</h3>
+            <p>libertadorhotel@hotmail.com</p>
+        </div>
+    </div>
+</section>
