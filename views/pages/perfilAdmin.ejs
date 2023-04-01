@@ -1,29 +1,29 @@
 <section id="comprobante"  class="py-3">
     <div class="container">
-        <h1 class="l-heading"><span class="text-primary">Usua</span>rio</h1>
-        <% if(usr){ %>
+        <h1 class="l-heading"><span class="text-primary">Ad</span>min</h1>
+        <% if(adm){ %>
             <div class="card" style="width: 18rem;">
                 <div class="card-header">
                     <ul class="list-group1">
                         <h5 class="card-title">Datos de la cuenta</h5>
                         <li class="list-group-item">Usuario:
-                            <%= usr.username %>
+                            <%= adm.username %>
                         </li>
                         <li class="list-group-item">Email:
-                            <%= usr.email %>
+                            <%= adm.email %>
                         </li>
                     </ul>
                 </div>
             </div>
         <% } %>
-        <a class="buttom1" href="/logout">
+        <a class="buttom1" href="/logoutAdmin">
             <button type="submit" class="btn">Logout</button>
         </a>
-        <a class="buttom2" href="/reservasList">
-            <button type="submit" class="btn">Ver reservas</button>
+        <a class="buttom2" href="/habitacionesList">
+            <button type="submit" class="btn">Ver habitaciones</button>
         </a>
-        <a class="buttom3" href="/cancelacion">
-            <button type="submit" class="btn">Cancelar reserva</button>
+        <a class="buttom3" href="/borrarHabitacion">
+            <button type="submit" class="btn">Borrar habitacion</button>
         </a>
     </div>
 </section>

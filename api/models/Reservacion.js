@@ -9,11 +9,12 @@ module.exports = {
 
   attributes: {
 
+    codigo: {type: 'number', required: true},
     fechaIngreso: {type: 'string', required: true},
     fechaSalida: {type: 'string', required: true},
     cantidadPasajeros: {type: 'number', required: true},
-    cantidadHabitaciones: {type: 'number', required: true},
     metodoPago: {type: 'string', isIn: ['Debito/Credito', 'Efectivo'], required: true},
+    montoTotal: {type: 'number', required: true},
 
 
     //Referencia a huesped
@@ -27,9 +28,8 @@ module.exports = {
     },
 
     //Referencia a habitacion
-    habitaciones: {
-      collection:'Habitacion',
-      via: 'habitacionReservada'
+    habitacionReservada: {
+      model: 'Habitacion'
     },
 
   },

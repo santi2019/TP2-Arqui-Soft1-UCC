@@ -31,11 +31,26 @@ module.exports.policies = {
     reservaView: 'isLoggedIn',
     newReserva: 'isLoggedIn',
     allReservas: 'isLoggedIn',
+    cancelacionView: 'isLoggedIn',
     cancelarReserva: 'isLoggedIn',
   },
 
   ComprobanteController:{
     comprobanteReserva: 'isLoggedIn',
+  },
+
+
+  AdminController:{
+    perfilAdmin: 'isLoggedAdmin',
+    logoutAdmin: 'isLoggedAdmin',
+  },
+
+
+  HabitacionController:{
+    habitacionesView: 'isLoggedAdmin',
+    borrarView: 'isLoggedAdmin',
+    newHabitacion: 'isLoggedAdmin',
+    deleteRoom: 'isLoggedAdmin',
   },
 
 

@@ -6,6 +6,9 @@
                 <div class="card-header">
                     <ul class="list-group1">
                         <h5 class="card-title">Datos de la reserva</h5>
+                        <li class="list-group-item">Codigo de reservacion:
+                            <%= i.codigo %>
+                        </li>
                         <li class="list-group-item">Fecha de llegada:
                             <%= i.fechaIngreso %>
                         </li>
@@ -15,11 +18,11 @@
                         <li class="list-group-item">Cantidad de pasajeros:
                             <%= i.cantidadPasajeros %>
                         </li>
-                        <li class="list-group-item">Cantidad de habitaciones:
-                            <%= i.cantidadHabitaciones %>
-                        </li>
                         <li class="list-group-item">Metodo de pago:
                             <%= i.metodoPago %>
+                        </li>
+                        <li class="list-group-item">Monto:
+                            <%= i.montoTotal %>
                         </li>
                         <h5 class="card-title">Huesped</h5>
                         <li class="list-group-item">Nombre:
@@ -34,9 +37,6 @@
                     </ul>
                 </div>
             </div>
-            <a class="buttom3" href="/cancelar">
-                <button type="submit" class="btn">Cancelar</button>
-            </a>
             <% } %>
     </div>
 </section>

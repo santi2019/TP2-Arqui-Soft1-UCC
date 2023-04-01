@@ -5,6 +5,7 @@
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 
+
 module.exports = {
   login: async function (req, res){
     let email = req.param('Email');
@@ -32,6 +33,7 @@ module.exports = {
 
   signup: async function (req, res){
     let userName = req.param('name');
+
     if (await User.findOne({username: userName})) {
       //res.send('Ya existe el usuario');
       res.redirect('/signup');
@@ -50,6 +52,7 @@ module.exports = {
     req.session.existedUser = null;
     res.redirect('/');
   }
+
 
 };
 

@@ -26,11 +26,18 @@
           <%if(req.session.existedUser) {%>
           <li><a href="/reserva">Reservar</a></li>
           <li><a href="/perfil"><%= req.session.existedUser.username %></a></li>
-          <% }else{%>
-            <a  href="/login">Login</a>
-            <li><a href="/signup">Signup</a></li>
+          <%} else if(req.session.existedAdmin) {%>
+              <li><a href="/habitacionesBuild">Añadir Habitacion</a></li>
+              <li><a href="/perfilAdmin"><%= req.session.existedAdmin.username %></a></li>
+          <% } else{%>
+              <li><a href="/login">Login</a></li>
+              <li><a href="/signup">Signup</a></li>
+              <li><a  href="/loginAdmin">Admin</a></li>
           <% }%>
         </li>
+          <li>
+
+          </li>
       </ul>
     </div>
   </nav>

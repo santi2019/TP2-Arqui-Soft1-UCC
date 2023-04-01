@@ -16,11 +16,10 @@ module.exports = {
       reserva: req.session.founded.id,                //ID del la reserva
     }).fetch();
 
-    const result = await Comprobante.findOne({id: com.id}).populate('reserva.owner.*');
+    const result = await Comprobante.findOne({id: com.id}).populate('reserva.owner.habitacionReservada.*');
 
     res.view('pages/ComprobanteReserva', {result});
     //res.send(JSON.stringify(result));
-
   }
 
 };

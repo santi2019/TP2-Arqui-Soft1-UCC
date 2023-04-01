@@ -1,30 +1,30 @@
-<section id="comprobante"  class="py-3">
+<section id="listareserva"  class="py-3">
     <div class="container">
-        <h1 class="l-heading"><span class="text-primary">Usua</span>rio</h1>
-        <% if(usr){ %>
+        <h1 class="l-heading"><span class="text-primary">Habitacio</span>nes</h1>
+        <% for (let i of allhabitaciones){ %>
             <div class="card" style="width: 18rem;">
                 <div class="card-header">
                     <ul class="list-group1">
-                        <h5 class="card-title">Datos de la cuenta</h5>
-                        <li class="list-group-item">Usuario:
-                            <%= usr.username %>
+                        <h5 class="card-title">Datos de la habitacion</h5>
+                        <li class="list-group-item">Numero:
+                            <%= i.numero %>
                         </li>
-                        <li class="list-group-item">Email:
-                            <%= usr.email %>
+                        <li class="list-group-item">Precio:
+                            <%= i.precio %>
+                        </li>
+                        <li class="list-group-item">Cantidad max de personas:
+                            <%= i.tipoHabitacion %>
+                        </li>
+                        <li class="list-group-item">Descripcion:
+                            <%= i.descripcion %>
+                        </li>
+                        <li class="list-group-item">Descripcion:
+                            <%= i.estado %>
                         </li>
                     </ul>
                 </div>
             </div>
-        <% } %>
-        <a class="buttom1" href="/logout">
-            <button type="submit" class="btn">Logout</button>
-        </a>
-        <a class="buttom2" href="/reservasList">
-            <button type="submit" class="btn">Ver reservas</button>
-        </a>
-        <a class="buttom3" href="/cancelacion">
-            <button type="submit" class="btn">Cancelar reserva</button>
-        </a>
+            <% } %>
     </div>
 </section>
 

@@ -1,19 +1,13 @@
 <section id="huesped-form" class="py-3">
     <div class="container">
-        <h1 class="l-heading"><span class="text-primary">Esta</span>dia</h1>
-        <p>Ingrese los datos de la estadia:</p>
-        <form action="/estadia" method="post">
+        <h1 class="l-heading"><span class="text-primary">Cancela</span>cion</h1>
+        <p>Ingrese el codigo de reservacion para cancelar:</p>
+        <form action="/cancelar" method="post">
             <div class="form-group">
-                <label for="fechaIngreso">Fecha de ingreso</label>
-                <input type="date" name="FechaIngreso" id="FechaIngreso">
-                <label for="fechaSalida">Fecha de salida</label>
-                <input type="date" name="FechaSalida" id="FechaSalida">
-                <label for="cantPasajeros">Cantidad de pasajeros</label>
-                <input type="number" name="CantPasajeros" id="CantPasajeros">
-                <label for="metodoPago">Metodo de pago: Debito/Credito o Efectivo</label>
-                <input type="text" name="MetodoPago" id="MetodoPago">
+                <label for="codigo">Codigo</label>
+                <input type="number" name="Codigo" id="Codigo">
             </div>
-            <button type="submit" class="btn">Buscar</button>
+            <button type="submit" class="btn">Aceptar</button>
         </form>
     </div>
 </section>

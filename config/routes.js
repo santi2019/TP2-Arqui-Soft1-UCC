@@ -31,6 +31,13 @@ module.exports.routes = {
   'GET /signup': {view: 'pages/signup'},
   'POST /signup': 'UserController.signup',
 
+
+  //ADMIN:
+  'GET /loginAdmin': { view: 'pages/loginAdmin' },
+  'POST /loginAdmin': 'AdminController.loginAdmin' ,
+  '/perfilAdmin': 'AdminController.perfilAdmin',
+  '/logoutAdmin': 'AdminController.logoutAdmin',
+
   //ABOUT US:
   'GET /about': { view: 'pages/about' },
 
@@ -42,9 +49,18 @@ module.exports.routes = {
   'GET /reservaConfirm': 'ReservacionController.reservaView', //{ view: 'pages/reservaConfirm' },
   'POST /estadia': 'ReservacionController.newReserva' ,
   '/reservasList': 'ReservacionController.allReservas' ,
-  '/cancelar': 'ReservacionController.cancelarReserva',
   '/ComprobanteReserva': 'ComprobanteController.comprobanteReserva',
 
+  //CANCELACION:
+  'GET /cancelacion': 'ReservacionController.cancelacionView',
+  'POST /cancelar': 'ReservacionController.cancelarReserva',
+
+  //CREACION DE HABITACIONES:
+  'GET /habitacionesBuild': 'HabitacionController.habitacionesView',
+  'POST /Build': 'HabitacionController.newHabitacion',
+  '/habitacionesList': 'HabitacionController.allHabitaciones' ,
+  'GET /borrarHabitacion': 'HabitacionController.borrarView',
+  'POST /borrar': 'HabitacionController.deleteRoom' ,
 
 
 
