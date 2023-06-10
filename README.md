@@ -1,6 +1,6 @@
-# Libertador Hotel Web
+# Libertador Hotel Web - Sails.Js
 
-a [Sails v1](https://sailsjs.com) application
+El siguiente proyecto consiste en un prototipo de sistema de reserva para un hotel ubicado en La Rioja, Argentina, el cual fue realizado para la materia arquitectura de software 1 de la Universidad Catolica de Cordoba (UCC) el año 2021. Los lenguajes utilizados para llevar a cabo este trabajo son HTML, CSS, Javascript y fundamentalmente el framework Sails.Js conjunto con Node.Js.
 
 ### Integrantes
 + Vietto Santiago
